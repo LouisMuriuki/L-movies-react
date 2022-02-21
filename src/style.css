@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color:#020916;
+}
+nav{
+    background-color: #020916;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav > h2{
+    font-size: 30px;
+    color: #ff8c00 ;
+    align-items: center;
+    align-self: center;
+    margin-left: 10px;
+}
+nav input{
+    border: 1px solid #000;
+    font-size: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    height: 40px;
+    align-items: center;
+    align-self: center;
+}
+.d-block{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    object-fit: cover;
+    width: 100%;
+    height: 700px;
+}
+#caption{
+    top: 50%;
+    max-width: 600px;
+    text-align: justify;
+}
+#caption h1{
+    color: #ff8c00 ;
+    font-size: 50px;
+}
+#caption p span{
+    padding-left: 10px;
+    font-size: 19px;
+    word-spacing:2px;
+}
+#overview{
+    font-size: 20px;
+}
+header{
+    color: whitesmoke;
+    margin: 20px,20px,20px,20px;
+}
+#top{
+    display:flex;
+    padding: 20px;
+    margin-left: 20px;
+    align-items: center;
+
+}
+#top button{
+    background-color: #494847;
+    color: rgb(126, 123, 123);
+    border: none;
+    height: 38px;
+    width: 100px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 14px;
+}
+#top button:hover{
+    color: white;
+}
+#top button:focus{
+    background-color: #ff8c00;
+    color: white;
+
+}
+#movie-card{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    top: 0%;
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin:25px 0px 200px 30px ; 
+}
+#movie-card:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+#movie-card img{
+    width: 100%;
+    border-radius: 10px;
+}
+#movie-card h5{
+    color: #fff;
+}
+#movie-card span{
+    margin-left: 18px;
+    justify-content:end;
+    
+}
+#movie-card > h6{
+    position: absolute;
+    bottom: 300px;
+}
+
+#hover{
+    position: absolute; 
+    background-color: #fff;
+    top:0;
+    left:0;
+    bottom: 0;
+    opacity:0;
+    height: 300px!important;
+    align-self: center;  
+}
+#hover h5{
+    color: #000;
+}
+#hover p span{
+    padding: 0%;
+}
+#movie-card:hover #hover{
+    opacity:0.5;
+}
+@media screen and (max-width:768px){ 
+   #caption h1{
+       font-size: 36px;
+   }
+   #caption p span{
+       font-size: 15px;
+   }
+}
