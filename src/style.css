@@ -16,7 +16,7 @@ nav{
     justify-content: space-between;
     
 }
-nav > h2{
+nav  h2{
     font-size: 30px;
     color: #ff8c00 ;
     align-items: center;
@@ -27,6 +27,7 @@ nav input{
     border: 1px solid #000;
     font-size: 20px;
     margin-right: 20px;
+    width: 150px;
     border-radius: 10px;
     height: 40px;
     align-items: center;
@@ -146,10 +147,17 @@ header{
     opacity:0.5;
 }
 @media screen and (max-width:768px){ 
+    #nav h2{
+        font-size: 26px;
+    }
    #caption h1{
        font-size: 36px;
    }
    #caption p span{
        font-size: 15px;
+   }
+   #overview{
+       font-size: 14px;
+       word-spacing: normal;
    }
 }
