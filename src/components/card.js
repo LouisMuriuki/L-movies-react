@@ -76,8 +76,11 @@ export default function Card(){
                 
                 <div id="movie-card">
             <img src={"https://image.tmdb.org/t/p/original/"+one.poster_path} alt={one.original_title}/>
+            <div id="media_type">
             <h5>{one.original_title||one.original_name}</h5>
-            <h6>{one.release_date}</h6>
+            <h6>{one.media_type}</h6>
+            </div>
+            <h6>{one.release_date||one.first_air_date}</h6>
             <div id="hover">
             <Hover data={one}/>
             </div>

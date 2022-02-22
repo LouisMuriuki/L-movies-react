@@ -109,10 +109,17 @@ header{
 #movie-card h5{
     color: #fff;
 }
-#movie-card span{
-    margin-left: 18px;
-    justify-content:end;
-    
+#media_type{
+    display: flex;
+    justify-content: space-between;   
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+#media_type h6{
+    margin-left: 6px;
+    border: 1px solid #000;
+    border-radius: 5px;
 }
 #movie-card > h6{
     position: absolute;
