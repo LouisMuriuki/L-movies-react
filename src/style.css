@@ -146,10 +146,20 @@ header{
     opacity:0.5;
 }
 @media screen and (max-width:768px){ 
+    #nav h2{
+        font-size: 36px;
+    }
+    #nav input{
+        width: 100px;
+    }
    #caption h1{
        font-size: 36px;
    }
    #caption p span{
        font-size: 15px;
+   }
+   #overview{
+       font-size: 14px;
+       word-spacing: normal;
    }
 }
