@@ -1,0 +1,47 @@
+input{
+    position: relative;
+    border: 1px solid #000;
+    font-size: 20px;
+    top: 10px;
+    margin-right: 20px;
+    width: 200px;
+    border-radius: 10px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.dataResult{
+    position: absolute;
+    right: 10px;
+    margin-top: 15px;
+    width:280px;
+    height: 200px;
+    background-color: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 2;
+}
+.dataResult::-webkit-scrollbar{
+    display: none;
+}
+.dataResult #dataitem{
+    width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    font-weight: 600;
+    color: #ff8c00;
+    cursor: pointer;
+    text-decoration: none;
+}
+#dataitem p{
+    margin-left: 10px;
+    color: #ff8c00;
+    text-decoration: none;
+}
+#dataitem p:hover{
+    background-color: lightgray;
+}

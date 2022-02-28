@@ -23,16 +23,7 @@ nav  h2{
     align-self: center;
     margin-left: 10px;
 }
-nav input{
-    border: 1px solid #000;
-    font-size: 20px;
-    margin-right: 20px;
-    width: 150px;
-    border-radius: 10px;
-    height: 40px;
-    align-items: center;
-    align-self: center;
-}
+
 .d-block{
     display: flex;
     justify-content: center;
@@ -81,9 +72,6 @@ header{
     text-align: center;
     border-radius: 14px;
 }
-#top button:hover{
-    color: white;
-}
 #top button:focus{
     background-color: #ff8c00;
     color: white;
@@ -127,26 +115,46 @@ header{
     bottom: 300px;
 }
 
-#hover{
-    position: absolute; 
-    background-color: #fff;
-    top:0;
-    left:0;
-    bottom: 0;
-    opacity:0;
-    height: 300px!important;
-    align-self: center;  
+/* Videocomponent */
+
+#youtube {
+    margin-left: 5%;
 }
-#hover h5{
-    color: #000;
+#details{
+    display: flex;
 }
-#hover p span{
-    padding: 0%;
+#moviedata{
+    padding: 17px;
+    max-width: 60%;
 }
-#movie-card:hover #hover{
-    opacity:0.5;
+#moviedata img{
+    width: 600px;
+    height: 650px;
+    margin-left: 20px;
 }
-@media screen and (max-width:768px){ 
+#moviedata #media_type{
+    display: inline-block;
+    color: #fff;
+    margin-left: 10px;
+    
+}
+#media_type .overview{
+    font-size: 20px;
+
+}
+#related{
+    max-width: 40%;
+}
+#related-card{
+display: flex;
+float:left;
+padding: 10px;
+}
+#related-card img{
+    width: 160px;
+    height:200px
+}
+@media screen and (max-width:1024px){ 
     #nav h2{
         font-size: 26px;
     }
@@ -160,4 +168,40 @@ header{
        font-size: 14px;
        word-spacing: normal;
    }
+   /* Videocomponent */
+   #details{
+       display: inline-block;
+       
+   }
+   #moviedata{
+    width: 100%; 
+   }
+   #related{
+    max-width: 100%;
+}
+   #moviedata #media_type{
+       max-width: none;
+   }
+   #media_type .overview{
+    font-size: 15px;
+   }
+   #media_type h1{
+       font-size: large;
+   }
+   #moviedata img{
+    width: 300px;
+    height: 350px;
+    margin-left: 10px;
+}
+#related #related-card{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin-left: 20px;
+   }
+   #related-card img{
+    width: 140px;
+    height:180px;
+    
+}
 }
