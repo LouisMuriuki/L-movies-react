@@ -158,6 +158,34 @@ padding: 10px;
     #nav h2{
         font-size: 26px;
     }
+
+#hover{
+    position: absolute; 
+    background-color: #fff;
+    top:0;
+    left:0;
+    bottom: 0;
+    opacity:0;
+    height: 300px!important;
+    align-self: center;  
+}
+#hover h5{
+    color: #000;
+}
+#hover p span{
+    padding: 0%;
+}
+#movie-card:hover #hover{
+    opacity:0.5;
+}
+@media screen and (max-width:768px){ 
+    #nav h2{
+        font-size: 36px;
+    }
+    #nav input{
+        width: 100px;
+
+    }
    #caption h1{
        font-size: 36px;
    }
@@ -204,4 +232,6 @@ padding: 10px;
     height:180px;
     
 }
+}
+
 }
