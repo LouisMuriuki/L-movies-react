@@ -2,7 +2,6 @@ input{
     position: relative;
     border: 1px solid #000;
     font-size: 20px;
-    top: 10px;
     margin-right: 20px;
     width: 200px;
     border-radius: 10px;
@@ -11,6 +10,7 @@ input{
     justify-content: center;
     align-self: center;
 }
+
 .dataResult{
     position: absolute;
     right: 10px;
@@ -44,4 +44,12 @@ input{
 }
 #dataitem p:hover{
     background-color: lightgray;
+}
+@media screen and (max-width:768){
+    input{
+        height: 30px;
+    }
+    input::placeholder{
+    font-size: 10px;
+    }
 }

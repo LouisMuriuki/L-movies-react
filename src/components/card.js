@@ -59,12 +59,10 @@ export default function Card() {
             setAll(tvshows)
         }
     }
-   
-    
 
     return (
         <>
-            <header>
+            <header id='watch'>
                 <h3>
                     Watch Free Movies Online
                 </h3>
