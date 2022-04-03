@@ -49,7 +49,6 @@ export default function Card() {
     function toggleMovie() {
         setMovie(Movieprev => !Movieprev)
         if (movie === true) {
-            console.log("am trying")
             setAll(allmovies)
         }
     }
@@ -59,15 +58,33 @@ export default function Card() {
             setAll(tvshows)
         }
     }
+    const [windowSize, setWindowSize] = React.useState(null)
+    React.useEffect(()=>{
+        const handleResize=()=>{
+            setWindowSize(window.innerWidth)
 
+        }
+        window.addEventListener('resize',handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    },[])
     return (
         <>
             <header id='watch'>
                 <h3>
                     Watch Free Movies Online
                 </h3>
-                <p>If you want to watch free movies online, L Movies is the right place. It allows you watch free movies online for free. No registration is required, fast streaming servers, update daily. We're confident L Movies is the best free movies streaming website in the space that you can't simply miss!
+               {
+                   windowSize > 768 &&
+
+                   <p>If you want to watch free movies online, L Movies is the right place. It allows you watch free movies online for free. No registration is required, fast streaming servers, update daily. We're confident L Movies is the best free movies streaming website in the space that you can't simply miss!
                     The biggest motivation to help us to make the site better is sharing the site to your friends. Thanks!</p>
+               }
+                {
+                   windowSize < 768 &&
+
+                   <p>If you want to watch free movies online, L Movies is the right place. It allows you watch free movies online for free. Thanks!</p>
+               }
+                
             </header>
             <div id="top">
                 <h1>Recommended</h1>

@@ -58,7 +58,6 @@ export default function Video() {
 
   return (
     <>
-
       {movievideo.filter((item, index) => index < 1).map(video => (
         <div id="youtube">
           <h2>{title}</h2>
